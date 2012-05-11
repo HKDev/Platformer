@@ -1,0 +1,1 @@
+﻿package core {		import org.flixel.FlxGame;	import core.State;	public class Game extends FlxGame {		public function Game() {			super(640,480,State,1);			forceDebugger = true;		}	}//class}//package
