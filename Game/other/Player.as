@@ -15,6 +15,14 @@
 
 
 		[Embed(source = '../assets/player.png')] private var playerPNG:Class;
+		
+		/****/
+		[Embed(source = '../assets/jet.png')] private var ImgJet:Class;
+		private var _boosters:Boolean;
+		private var _canBoost:Boolean;
+		private var _fuel:int;
+		private var _jets:FlxEmitter;
+	
 	
 		protected var _bullets:FlxGroup;
 		protected var _aim:uint;		
@@ -49,7 +57,7 @@
 
 		// Player
 
-		public function Player(X:int, Y:int,Bullets:FlxGroup):void {
+		public function Player(X:int, Y:int,Bullets:FlxGroup,Jets:FlxEmitter):void {
 			super(X,Y);
 		
 			// spawn locations
@@ -76,6 +84,8 @@
 			// bullet stuff
 			_bullets = Bullets;
 			
+			/****///_jets
+			_jets = Jets;
 
 			// control handler
 			if (FlxG.getPlugin(FlxControl) == null)
@@ -100,6 +110,18 @@
 			// death sfx
 			playerDeathSound = new FlxSound();
 			playerDeathSound.loadEmbedded(playerDeathSFX, false, false);
+			
+			/****///jetpack setup
+			_fuel = 5000;
+			
+			_jets.gravity = 0;
+			_jets.setXSpeed( -10, 10);
+			
+			_jets.setYSpeed(-100,0);
+			
+			_jets.makeParticles(ImgJet,15);
+			
+			_jets.kill();
 
 		}
 
@@ -202,6 +224,48 @@
 				play("normal");
 			}
 	
+	
+			/****/
+			_jets.y = this.y + 4;
+			if(facing == RIGHT) _jets.x = this.x;
+			else _jets.x = this.x + 5;
+			if (!velocity.y) {
+				_canBoost = false;
+			}
+			if (velocity.y && FlxG.keys.justReleased("SPACE")) {
+				_canBoost = true;
+			}
+			if (velocity.y > 0) {
+				_canBoost = true;
+			}
+			if(FlxG.keys.justPressed("SPACE") && !_boosters && _canBoost) {
+				_boosters = true;
+				_jets.start();
+				
+			}
+			if(!FlxG.keys.SPACE && _boosters)
+			{
+				_boosters = false;
+				this.angularVelocity = 0;			
+				this.angle = 0;	
+				_jets.kill();
+			}
+			if (_boosters && _fuel <= 0)
+			{
+				_boosters = false;
+				_jets.kill();
+			}
+			if(_boosters && _fuel>0)
+			{
+				velocity.y = -70;
+				_fuel += -10;
+			}
+			if(!_boosters && _fuel<400)
+			{
+				_fuel += 20;
+			}
+ 			/****/
+			
 			// player outside of world bounds
 			if(this.x <= 0 || this.y <= 0) {
 				flicker(.5);
