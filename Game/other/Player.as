@@ -7,6 +7,7 @@
 	import flash.events.TimerEvent;
 	import org.flixel.system.FlxTile;
 	import org.flixel.FlxEmitter;
+	import core.State;
 	
 
 
@@ -15,6 +16,17 @@
 
 
 		[Embed(source = '../assets/player.png')] private var playerPNG:Class;
+		[Embed (source = "../assets/begin_throw.mp3")] private var snd_begin_throw:Class;
+		[Embed (source = "../assets/throw.mp3")] private var snd_throw:Class;
+		[Embed (source = "../assets/charge.mp3")] private var snd_charge:Class;
+		
+		
+		//grenade
+		public const MAX_GRENADE_CHARGE:Number = 1.8;
+		public var grenade_charge:Number = 0;
+		public var grenade_charging:Boolean = false;
+		public var throwing:Boolean = false;
+		
 		
 		/****/
 		[Embed(source = '../assets/jet.png')] private var ImgJet:Class;
@@ -50,9 +62,10 @@
 		[Embed(source = '../assets/playerJump.mp3')] private var playerJumpSFX:Class;
 		private var playerJumpSound:FlxSound;
 
-
-
-
+		public var charge_sound:FlxSound;
+		
+		//to check whether the player is bouncable or not when bomb explode
+		public var bounced:Boolean = false;
 
 
 		// Player
@@ -110,6 +123,12 @@
 			// death sfx
 			playerDeathSound = new FlxSound();
 			playerDeathSound.loadEmbedded(playerDeathSFX, false, false);
+			
+			
+			// Set up the charging-up sound
+			charge_sound = new FlxSound();
+			charge_sound.loadEmbedded(snd_charge);
+			charge_sound.volume = 0.6;
 			
 			/****///jetpack setup
 			_fuel = 5000;
@@ -202,8 +221,10 @@
 			if(isTouching(FLOOR))
 			{
 				this.angularVelocity = 0;			
-				this.angle = 0;				
+				this.angle = 0;
+				
 			}
+			setBounce();
 			/*if(velocity.y == 0) { 
 				this.angularVelocity = 0;			
 				this.angle = 0;
@@ -275,6 +296,77 @@
 				flicker(.5);
 				respawn(null,null);
 			}
+			
+			do_input();
+			if (throwing)
+			{
+				//play("throw2");
+				//if (_curFrame == 6) { 
+				throwing = false; 
+				//}
+			}
+		}
+
+		public function do_input() : void
+		{
+			// Grenade
+			// If you've pressed the button and you're not releasing the grenade
+			if (FlxG.keys.justPressed("C") && !throwing)
+			{
+				grenade_charging = true;
+				throwing = false;
+				FlxG.play(snd_begin_throw);
+			}
+			
+			// If you're still charging up
+			if (FlxG.keys.C && grenade_charging)
+			{
+				grenade_charge += FlxG.elapsed;
+				
+				// Start playing the sound if we've charged a bit (0.16 is arbitrary)
+				
+				if (grenade_charge > 0.16 && !charge_sound.active)
+				{
+					charge_sound.play();
+				}
+			}			
+			
+			// If you let go, or it finishes charging, throw
+			if ( (FlxG.keys.justReleased("C") || grenade_charge >= MAX_GRENADE_CHARGE) && grenade_charging)
+			{
+				throwing = true;
+			}
+			
+			// But it doesn't actually create the object or anything until the animation has gotten to frame 2
+			//if (throwing && _curFrame == 2 && _curAnim.name == "throw2" && grenade_charging)
+			if (throwing && grenade_charging)
+			{
+				// Figure out velocities
+				var xv:Number;
+				var yv:Number = -70;
+				if ( facing == LEFT ) { xv = - 40; }
+				else { xv = 40; }
+				// Some weird arithmetic which is basically saying the longer you charge, the further it will go, with a tendency
+				// towards a higher trajectory
+				var g:Grenade = new Grenade(x + 8, y + 5, xv * (grenade_charge + 2), yv * (grenade_charge * 1.5 + 0.5));				
+				(FlxG.state as core.State).group_grenades.add(g);
+				// Reset stuff
+				grenade_charge = 0;
+				grenade_charging = false;
+				charge_sound.stop();
+				FlxG.play(snd_throw, 0.6);
+				
+				//FlxG.score += 25; // Joke!
+			}
+			
+			/*if (grenade_charging ) { // If you're charging, you can't move.
+				acceleration.x = 0;
+				if (onFloor)
+				{
+					drag.x = RUN_DRAG;
+				}
+				return;
+			}*/			
 		}
 
 
@@ -309,6 +401,18 @@
 			this.health = 100;
 		}
 
+		public function setBounce():void {
+			
+			if(isTouching(FLOOR))
+			{
+				if (bounced)
+				{
+					bounced = false;
+					return;
+				}
+			}
 
+		}
+		
 	}//class
 }//package

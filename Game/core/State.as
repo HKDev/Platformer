@@ -5,6 +5,7 @@
 	import other.Player;
 	import other.Bullet;
 	import other.Enemy;
+	import other.ExplosionParticle;
 	import org.flixel.system.FlxTile;
 	import flash.utils.Timer;
 	import flash.events.TimerEvent;
@@ -16,15 +17,19 @@
 		// Core References
 		private var sky:FlxTilemap;
 		public static var map:FlxTilemap;
-		private var player:Player;
+		public var player:Player;
 		private var bgmusic:FlxSound;
 		
 		private var _bullets: FlxGroup;
 		private var _enemyBullets:FlxGroup;
-		protected var _grpEnemies:FlxGroup;
+		public var _grpEnemies:FlxGroup;
 		protected var _grpHearts:FlxGroup;
 		private var sprite:FlxSprite;
 		private var collisionTriggered:Boolean = false;
+		
+		//grenade
+		public var group_grenades:FlxGroup = new FlxGroup();
+		public var group_explosions:FlxGroup = new FlxGroup();
 
 		private var healthBar:FlxSprite;
 		
@@ -101,6 +106,8 @@
 			add(_bullets);	
 			add(jets);
 			add(_enemyBullets);
+			add(group_grenades);
+			add(group_explosions);
 
 			for(var i:int = 0; i < Math.random() * 10; i++) { 
 				var heart:FlxSprite = new FlxSprite(Math.random()*map.width,Math.random()*map.height,heartClass);
@@ -161,6 +168,8 @@
 			FlxG.collide(player, sprite);
 			// collide with map solid tiles
 			FlxG.collide(_grpEnemies,map);
+			
+			FlxG.collide(group_grenades,map);
 			// collide with all map tiles
 			FlxG.overlap(_grpEnemies,map,enemyMapCollision);
 
@@ -304,6 +313,21 @@
 			
 		}
 
+		// Recycling, like in Collapse Tutorial
+		public function addExplosionParticle(x:int, y:int, c:Number):void
+		{
+			
+			var respawn:ExplosionParticle = (group_explosions.getFirstDead() as ExplosionParticle);
+			if (group_explosions.members.length < 50 || respawn)
+			{
+				if (!respawn)
+				{
+					respawn = new ExplosionParticle();
+					group_explosions.add(respawn);
+				}
+				respawn.spawn(x, y, c);
+			}
+		}
 
 
 	}//class
