@@ -62,6 +62,8 @@
 		// Heart / Testing
 		[Embed(source = '../assets/heart.png')] private var heartClass:Class;
 		
+		[Embed(source = '../assets/healthbar.png')] public static var healthbarPNG:Class;		
+		private var bar1:FlxBar;
 
 
 		override public function create():void {			
@@ -172,6 +174,14 @@
 			add(frame);
 			add(inside);
 			add(healthBar);
+			
+			bar1 = new FlxBar(0, 0, FlxBar.FILL_LEFT_TO_RIGHT);
+			bar1.scrollFactor.x = 0;
+			bar1.scrollFactor.y = 0;
+			bar1.createImageBar(null, healthbarPNG, 0x88000000);
+			
+			add(bar1);
+			FlxG.watch(bar1, "percent");
 			/********************************/
 
 
@@ -272,7 +282,10 @@
 			FlxG.overlap(player,_grpHybrids,playerTouchedEnemy);
 //			trace("player health /2 : " + (player.health/2));
 			if(player.health > 0)
+			{
 				healthBar.makeGraphic(((player.health/2)),6,0xFFFFF000);
+				bar1.percent = player.health;
+			}
 
 			// check to see if player is underwater
 			switch(map.getTile(Math.floor(player.x)/16,Math.floor(player.y)/16)) { 
