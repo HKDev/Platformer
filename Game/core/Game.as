@@ -1,1 +1,1 @@
-﻿package core {		import org.flixel.FlxGame;	import core.State;	public class Game extends FlxGame {		public function Game() {			super(550,400,State,1);			forceDebugger = true;		}	}//class}//package
+﻿/*	Parent of: State.as*/package core {		import org.flixel.FlxGame;	import core.State;	public class Game extends FlxGame {		public function Game() {			super(550,400,State,1);			forceDebugger = true;		}	}//class}//package
