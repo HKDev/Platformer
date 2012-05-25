@@ -5,15 +5,15 @@ Metadata
 --------
 Bytes         Value
 ----------    -----
-      1161    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"> <rdf:Description rdf:about="" xmlns:xmp="http://ns.adobe.com/xap/1.0/"> <xmp:CreatorTool>Adobe Flash Professional CS5</xmp:CreatorTool> <xmp:CreateDate>2012-04-28T23:09:02-04:00</xmp:CreateDate> <xmp:MetadataDate>2012-05-24T21:52:01-04:00</xmp:MetadataDate> <xmp:ModifyDate>2012-05-24T21:52:01-04:00</xmp:ModifyDate> </rdf:Description> <rdf:Description rdf:about="" xmlns:dc="http://purl.org/dc/elements/1.1/"> <dc:format>application/x-shockwave-flash</dc:format> </rdf:Description> <rdf:Description rdf:about="" xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/" xmlns:stRef="http://ns.adobe.com/xap/1.0/sType/ResourceRef#"> <xmpMM:DerivedFrom rdf:parseType="Resource"> <stRef:instanceID>xmp.iid:F77F1174072068118C14C6F9A60CD383</stRef:instanceID> <stRef:documentID>xmp.did:6F362D192B2068118C14D3646EA7603A</stRef:documentID> <stRef:originalDocumentID>xmp.did:6F362D192B2068118C14D3646EA7603A</stRef:originalDocumentID> </xmpMM:DerivedFrom> <xmpMM:DocumentID>xmp.did:2EBE1406102068118C14C6F9A60CD383</xmpMM:DocumentID> <xmpMM:InstanceID>xmp.iid:2EBE1406102068118C14C6F9A60CD383</xmpMM:InstanceID> <xmpMM:OriginalDocumentID>xmp.did:6F362D192B2068118C14D3646EA7603A</xmpMM:OriginalDocumentID> </rdf:Description> </rdf:RDF> 
+      1161    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"> <rdf:Description rdf:about="" xmlns:xmp="http://ns.adobe.com/xap/1.0/"> <xmp:CreatorTool>Adobe Flash Professional CS5</xmp:CreatorTool> <xmp:CreateDate>2012-04-28T23:09:02-04:00</xmp:CreateDate> <xmp:MetadataDate>2012-05-24T21:57:09-04:00</xmp:MetadataDate> <xmp:ModifyDate>2012-05-24T21:57:09-04:00</xmp:ModifyDate> </rdf:Description> <rdf:Description rdf:about="" xmlns:dc="http://purl.org/dc/elements/1.1/"> <dc:format>application/x-shockwave-flash</dc:format> </rdf:Description> <rdf:Description rdf:about="" xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/" xmlns:stRef="http://ns.adobe.com/xap/1.0/sType/ResourceRef#"> <xmpMM:DerivedFrom rdf:parseType="Resource"> <stRef:instanceID>xmp.iid:F77F1174072068118C14C6F9A60CD383</stRef:instanceID> <stRef:documentID>xmp.did:6F362D192B2068118C14D3646EA7603A</stRef:documentID> <stRef:originalDocumentID>xmp.did:6F362D192B2068118C14D3646EA7603A</stRef:originalDocumentID> </xmpMM:DerivedFrom> <xmpMM:DocumentID>xmp.did:89F9AEC5132068118C14C6F9A60CD383</xmpMM:DocumentID> <xmpMM:InstanceID>xmp.iid:89F9AEC5132068118C14C6F9A60CD383</xmpMM:InstanceID> <xmpMM:OriginalDocumentID>xmp.did:6F362D192B2068118C14D3646EA7603A</xmpMM:OriginalDocumentID> </rdf:Description> </rdf:RDF> 
 
 Frame #    Frame Bytes    Total Bytes    Scene
 -------    -----------    -----------    -----
-      1        2133384        2133384    Scene 1 (AS 3.0 Classes Export Frame)
+      1        2133394        2133394    Scene 1 (AS 3.0 Classes Export Frame)
 
 Scene      Shape Bytes    Text Bytes    ActionScript Bytes
 -------    -----------    ----------    ------------------
-Scene 1              0             0                162925
+Scene 1              0             0                162927
 
 Font Name                  Bytes         Characters
 -----------------------    ----------    ----------
@@ -21,7 +21,7 @@ org.flixel.FlxGame_junk         11792
 
 ActionScript Bytes    Location
 ------------------    --------
-            162925    Scene 1:Frame 1
+            162927    Scene 1:Frame 1
 
 Bitmap                                            Compressed    Original      Compression
 ----------------------------------------------    ----------    ----------    -----------
@@ -30,7 +30,7 @@ org.flixel.system.input.Mouse_ImgDefaultCursor           436                  or
 Sound name                     Bytes         Format
 ---------------------------    ----------    ------
 org.flixel.FlxGame_SndBeep           1518    
-core.Assets_musicTrack1           1844849    
+core.Assets_musicTrack1           1844857    
 core.Assets_SndShoot                 1518    
 core.Assets_snd_throw                4529    
 core.Assets_g_snd_bounce             1141    
