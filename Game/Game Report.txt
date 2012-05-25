@@ -5,48 +5,48 @@ Metadata
 --------
 Bytes         Value
 ----------    -----
-      1216    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"> <rdf:Description rdf:about="" xmlns:xmp="http://ns.adobe.com/xap/1.0/"> <xmp:CreatorTool>Adobe Flash Professional CS5</xmp:CreatorTool> <xmp:CreateDate>2012-04-28T23:09:02-04:00</xmp:CreateDate> <xmp:MetadataDate>2012-05-24T20:53:06-04:00</xmp:MetadataDate> <xmp:ModifyDate>2012-05-24T20:53:06-04:00</xmp:ModifyDate> </rdf:Description> <rdf:Description rdf:about="" xmlns:dc="http://purl.org/dc/elements/1.1/"> <dc:format>application/x-shockwave-flash</dc:format> </rdf:Description> <rdf:Description rdf:about="" xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/" xmlns:stRef="http://ns.adobe.com/xap/1.0/sType/ResourceRef#"> <xmpMM:DerivedFrom rdf:parseType="Resource"> <stRef:instanceID>xmp.iid:F77F1174072068118C14C6F9A60CD383</stRef:instanceID> <stRef:documentID>xmp.did:6F362D192B2068118C14D3646EA7603A</stRef:documentID> <stRef:originalDocumentID>xmp.did:6F362D192B2068118C14D3646EA7603A</stRef:originalDocumentID> </xmpMM:DerivedFrom> <xmpMM:DocumentID>xmp.did:99B135190B2068118C14C6F9A60CD383</xmpMM:DocumentID> <xmpMM:InstanceID>xmp.iid:99B135190B2068118C14C6F9A60CD383</xmpMM:InstanceID> <xmpMM:OriginalDocumentID>xmp.did:6F362D192B2068118C14D3646EA7603A</xmpMM:OriginalDocumentID> </rdf:Description> </rdf:RDF> 
+      1161    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"> <rdf:Description rdf:about="" xmlns:xmp="http://ns.adobe.com/xap/1.0/"> <xmp:CreatorTool>Adobe Flash Professional CS5</xmp:CreatorTool> <xmp:CreateDate>2012-04-28T23:09:02-04:00</xmp:CreateDate> <xmp:MetadataDate>2012-05-24T21:30:18-04:00</xmp:MetadataDate> <xmp:ModifyDate>2012-05-24T21:30:18-04:00</xmp:ModifyDate> </rdf:Description> <rdf:Description rdf:about="" xmlns:dc="http://purl.org/dc/elements/1.1/"> <dc:format>application/x-shockwave-flash</dc:format> </rdf:Description> <rdf:Description rdf:about="" xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/" xmlns:stRef="http://ns.adobe.com/xap/1.0/sType/ResourceRef#"> <xmpMM:DerivedFrom rdf:parseType="Resource"> <stRef:instanceID>xmp.iid:F77F1174072068118C14C6F9A60CD383</stRef:instanceID> <stRef:documentID>xmp.did:6F362D192B2068118C14D3646EA7603A</stRef:documentID> <stRef:originalDocumentID>xmp.did:6F362D192B2068118C14D3646EA7603A</stRef:originalDocumentID> </xmpMM:DerivedFrom> <xmpMM:DocumentID>xmp.did:27BE1406102068118C14C6F9A60CD383</xmpMM:DocumentID> <xmpMM:InstanceID>xmp.iid:27BE1406102068118C14C6F9A60CD383</xmpMM:InstanceID> <xmpMM:OriginalDocumentID>xmp.did:6F362D192B2068118C14D3646EA7603A</xmpMM:OriginalDocumentID> </rdf:Description> </rdf:RDF> 
 
 Frame #    Frame Bytes    Total Bytes    Scene
 -------    -----------    -----------    -----
-      1        2222849        2222849    Scene 1 (AS 3.0 Classes Export Frame)
+      1        2133542        2133542    Scene 1 (AS 3.0 Classes Export Frame)
 
 Scene      Shape Bytes    Text Bytes    ActionScript Bytes
 -------    -----------    ----------    ------------------
-Scene 1              0             0                170674
+Scene 1              0             0                162926
 
 Font Name                  Bytes         Characters
 -----------------------    ----------    ----------
-org.flixel.FlxGame_junk         12353    
+org.flixel.FlxGame_junk         11792    
 
 ActionScript Bytes    Location
 ------------------    --------
-            170674    Scene 1:Frame 1
+            162926    Scene 1:Frame 1
 
 Bitmap                                            Compressed    Original      Compression
 ----------------------------------------------    ----------    ----------    -----------
-org.flixel.system.input.Mouse_ImgDefaultCursor           457                  org.flixel.FlxSprite_ImgDefault                           76                  org.flixel.FlxTilemap_ImgAuto                            144                  org.flixel.FlxTilemap_ImgAutoAlt                         145                  org.flixel.FlxGame_ImgLogo                                48                  core.Assets_ImgHybridEnemy                              1449                  core.Assets_tileImg                                      390                  core.Assets_ImgJet                                        35                  core.Assets_img_grenade                                  279                  core.Assets_ImgBullet                                    113                  core.Assets_img_explosion                               3609                  core.Assets_mapTilesPNG                                 6060                  core.Assets_healthbarPNG                                 586                  core.Assets_ImgEnemy                                     483                  core.Assets_playerRollingPNG                             669                  core.Assets_ImgElevator                                  323                  core.Assets_skyTilesPNG                                11362                  core.Assets_playerPNG                                    449                  core.Assets_heartClass                                  1385                  org.flixel.system.debug.VCR_ImgOpen                       77                  org.flixel.system.debug.VCR_ImgPlay                       66                  org.flixel.system.debug.VCR_ImgRecordOn                  117                  org.flixel.system.debug.VCR_ImgFlixel                     87                  org.flixel.system.debug.VCR_ImgStop                       25                  org.flixel.system.debug.VCR_ImgRestart                    60                  org.flixel.system.debug.VCR_ImgRecordOff                  86                  org.flixel.system.debug.VCR_ImgStep                       67                  org.flixel.system.debug.VCR_ImgPause                      33                  org.flixel.system.debug.Vis_ImgBounds                     72                  org.flixel.system.FlxWindow_ImgHandle                     44                  org.flixel.system.FlxPreloader_ImgLogoCorners           2265                  org.flixel.system.FlxPreloader_ImgLogo                    48                  org.flixel.system.FlxPreloader_ImgLogoLight             3369                  
+org.flixel.system.input.Mouse_ImgDefaultCursor           436                  org.flixel.FlxSprite_ImgDefault                           72                  org.flixel.FlxTilemap_ImgAuto                            137                  org.flixel.FlxTilemap_ImgAutoAlt                         138                  org.flixel.FlxGame_ImgLogo                                45                  core.Assets_ImgHybridEnemy                              1384                  core.Assets_tileImg                                      372                  core.Assets_ImgJet                                        34                  core.Assets_img_grenade                                  266                  core.Assets_ImgBullet                                    108                  core.Assets_img_explosion                               3446                  core.Assets_mapTilesPNG                                 5785                  core.Assets_healthbarPNG                                 900                  core.Assets_ImgEnemy                                     461                  core.Assets_playerRollingPNG                             639                  core.Assets_ImgElevator                                  308                  core.Assets_skyTilesPNG                                10846                  core.Assets_playerPNG                                    429                  core.Assets_heartClass                                  1322                  org.flixel.system.debug.VCR_ImgOpen                       73                  org.flixel.system.debug.VCR_ImgPlay                       63                  org.flixel.system.debug.VCR_ImgRecordOn                  112                  org.flixel.system.debug.VCR_ImgFlixel                     83                  org.flixel.system.debug.VCR_ImgStop                       24                  org.flixel.system.debug.VCR_ImgRestart                    57                  org.flixel.system.debug.VCR_ImgRecordOff                  82                  org.flixel.system.debug.VCR_ImgStep                       64                  org.flixel.system.debug.VCR_ImgPause                      31                  org.flixel.system.debug.Vis_ImgBounds                     69                  org.flixel.system.FlxWindow_ImgHandle                     42                  org.flixel.system.FlxPreloader_ImgLogoCorners           2162                  org.flixel.system.FlxPreloader_ImgLogo                    45                  org.flixel.system.FlxPreloader_ImgLogoLight             3216                  
 
 Sound name                     Bytes         Format
 ---------------------------    ----------    ------
-org.flixel.FlxGame_SndBeep           1590    
-core.Assets_musicTrack1           1920847    
-core.Assets_SndShoot                 1590    
-core.Assets_snd_throw                4744    
-core.Assets_g_snd_bounce             1196    
-core.Assets_playerJumpSFX            5926    
-core.Assets_snd_charge              29582    
-core.Assets_SndHit                   1590    
-core.Assets_playerDeathSFX           7257    
-core.Assets_g_snd_explosion          5139    
-core.Assets_g_snd_blip2              9870    
-core.Assets_snd_begin_throw          1590    
-core.Assets_g_snd_blip1              2378    
+org.flixel.FlxGame_SndBeep           1518    
+core.Assets_musicTrack1           1844912    
+core.Assets_SndShoot                 1518    
+core.Assets_snd_throw                4529    
+core.Assets_g_snd_bounce             1141    
+core.Assets_playerJumpSFX            5657    
+core.Assets_snd_charge              28239    
+core.Assets_SndHit                   1518    
+core.Assets_playerDeathSFX           6928    
+core.Assets_g_snd_explosion          4905    
+core.Assets_g_snd_blip2              9422    
+core.Assets_snd_begin_throw          1518    
+core.Assets_g_snd_blip1              2270    
 
 Binary Data           Bytes         Location
 ------------------    ----------    --------
-core.Assets_skyCSV            26    
-core.Assets_mapCSV          9264    
+core.Assets_skyCSV            25    
+core.Assets_mapCSV          8843    
 
 
 
