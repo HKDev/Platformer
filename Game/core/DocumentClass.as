@@ -85,6 +85,7 @@ package core {
 		private function loadFinished(e:Event):void { 
 			trace("[ % ] Assets Loaded!");
 			stage.removeEventListener(CoreEvent.PRELOADED,loadFinished);
+			stage.removeChild(preloader);
 			newGame();
 		}
 
