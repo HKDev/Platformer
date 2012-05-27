@@ -1,0 +1,1 @@
+﻿package core {	import flash.events.Event;	public class CoreEvent extends Event {		public static const PRELOADED:String = "Preloaded";				public function CoreEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false) {			super(type, bubbles, cancelable);		}	}}
