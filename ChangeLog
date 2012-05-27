@@ -1,0 +1,675 @@
+commit 93358627dee579f57c3655e064b0d99a4a75c05a
+Author: KennyGregory <kenny@psycode.us>
+Date:   Sun May 27 16:04:50 2012 -0400
+
+    Last commit was missing items...
+
+commit 4322c867216f28c0928dd98b748548e33ec2096f
+Author: KennyGregory <kenny@psycode.us>
+Date:   Sun May 27 15:29:23 2012 -0400
+
+    Updated menu gfx
+
+commit 912c22faaca2820d3e1148b00b9a4e7d70df9144
+Author: Hiren Sakaria <hiren@psycode.us>
+Date:   Sun May 27 17:28:51 2012 +0530
+
+    menu system is added to the game
+
+commit cdc8ecb86dd5250dd060175364a1ddf6fcc7fa4b
+Author: KennyGregory <kenny@psycode.us>
+Date:   Sun May 27 00:15:42 2012 -0400
+
+    Removed unused file
+
+commit 797e7d6a079fc4d4be9bf37aaef8dcb1a344372b
+Author: KennyGregory <kenny@psycode.us>
+Date:   Sun May 27 00:12:14 2012 -0400
+
+    Scratched previous revision.. When I searched for memory leaks here recently I revised alot of code then. Player.as and State.as needs some cleanup work but other than that a few small comments in some of the new stuff.. Also removing null.txt test file when I was forking and setting up my git config
+
+commit ab989a6f9e4a399e03efdb9a07f296b19fe478eb
+Author: KennyGregory <kenny@psycode.us>
+Date:   Sun May 27 00:08:42 2012 -0400
+
+    Increased acceleration when Momentum Effect is active
+
+commit 92cf256edb0b6ddba40d0785f6dc4e56ac45def8
+Author: KennyGregory <kenny@psycode.us>
+Date:   Sat May 26 23:12:11 2012 -0400
+
+    Hiren ready for you to pull..
+
+commit 15d804253b1e9222489a321c805c1c52bba41f76
+Author: Kenny Gregory <kenny@psycode.us>
+Date:   Sat May 26 22:08:59 2012 -0400
+
+    Sorry about that. I was going to reset the head but afraid it will reset my fork I setup. I have made changes below this junk so please check them.
+
+commit 5433dee06f72485965c7c8a243292c23bae463a0
+Merge: 000c5db ae42162
+Author: KennyGregory <kenny@psycode.us>
+Date:   Sat May 26 22:04:54 2012 -0400
+
+    Merge branch 'master' of github.com:HKDev/Platformer
+
+commit 000c5db54b50c32b4f836ee01c9671a1c9a8db2b
+Author: KennyGregory <kenny@psycode.us>
+Date:   Sat May 26 22:02:07 2012 -0400
+
+    Forked @ KennyGregory/Platform.git
+
+commit ae42162299784e82d4ba5c4ff236c35c6055b09e
+Author: KennyGregory <kenny@psycode.us>
+Date:   Sat May 26 22:00:27 2012 -0400
+
+    Ignore this commit..
+
+commit 9eaff7cc06a03e79d0c80411c0812f937d5894b8
+Author: KennyGregory <kenny@psycode.us>
+Date:   Sat May 26 21:45:45 2012 -0400
+
+    Test....
+
+commit 581377340fca1b370174da3800b2f957b43821cc
+Author: KennyGregory <kenny@psycode.us>
+Date:   Sat May 26 21:45:10 2012 -0400
+
+    Test..
+
+commit 085b882bf062470d67d8aad06789ef63a0ea45bf
+Author: KennyGregory <kenny@psycode.us>
+Date:   Sat May 26 21:44:02 2012 -0400
+
+    Yet another test..
+
+commit cce870e6786a914ce2ce8a8522bf549b2eeb7211
+Author: KennyGregory <kenny@psycode.us>
+Date:   Sat May 26 21:29:06 2012 -0400
+
+    Another test...
+
+commit 18a76663ec3bc9709d8c87a9517e30d259265615
+Author: Kenny Gregory <kenny@www.psycode.us>
+Date:   Sat May 26 20:16:59 2012 -0400
+
+    Testing Github diff for commits from new fork
+
+commit 65e59f84d48d91a51240d11af1f930b48f4a3eb5
+Merge: 9727ce6 057a587
+Author: Kenny Gregory <kenny@www.psycode.us>
+Date:   Sat May 26 20:12:39 2012 -0400
+
+    Merge branch 'master' of github.com:HKDev/Platformer
+
+commit 057a587fffd40ace2764fd0f9be9b2a02644eee6
+Author: Kenny Gregory <kenny@www.psycode.us>
+Date:   Sat May 26 19:42:22 2012 -0400
+
+    Created 3 Layers for depth stacking on the FlxSprites. Add your sprites to the layer you want it to be on rather it be front/middle/back layer. Layers are named layer1,layer2,layer3. Also added a nullClass which is a 1x1 transparent pixel null.png to the Assets class. What this does and may not be needed but did not find a work around.. this allows you to use the FlxSprite without needing a graphic and without seeing default Flixel graphic when you don't have a class. The nullClass is still a graphic and will be added to the display but it is as minimal as possible and works for the job. If you have a better suggestion please notify me.
+
+commit 44b8ae411fb9a0f86221a6a149b723aa7d506154
+Author: Kenny Gregory <kenny@www.psycode.us>
+Date:   Sat May 26 18:38:40 2012 -0400
+
+    Pushing to resync
+
+commit 9c4df3cabf70ce2c62787919def0ebc9c9afdc1e
+Author: Kenny Gregory <kenny@www.psycode.us>
+Date:   Sat May 26 18:07:24 2012 -0400
+
+    Added player clone trail with alpha fade when running. If you reach a certain elapsed time tracked by FlxG.elapsed... A property speedStage will be set to either 1,2 or 3 each > setting the trail lengthens.. so the faster you go the more the trail grows... Tried not to make it to noticable and lengthy; Still working on this and going to place the clones behind the player so it will run more smoothly.
+
+commit a405e198f6b7a3726e6aaf2b425f4c405dc888ca
+Author: Kenny Gregory <kenny@www.psycode.us>
+Date:   Sat May 26 16:03:33 2012 -0400
+
+    Updated Readme file since no longer searching for artist.
+
+commit 791b4c768583835d78d59d1ad778da51a14a3e73
+Author: Kenny Gregory <kenny@www.psycode.us>
+Date:   Sat May 26 15:16:26 2012 -0400
+
+    Changed background music again to something less intense
+
+commit bf53f9dccc208877dead850737224717152ada46
+Author: Kenny Gregory <kenny@www.psycode.us>
+Date:   Sat May 26 14:57:45 2012 -0400
+
+    Added more Tile #49 breakables to the stage just so Hiren can get an idea of how well the solution provided for breakable replacement tile works. Hiren also check previous commit..
+
+commit e97bbc7e36280f3203e7e33de11ace52180234e8
+Author: Kenny Gregory <kenny@www.psycode.us>
+Date:   Sat May 26 14:44:55 2012 -0400
+
+    Added a isSolid(Tile:uint):Boolean to check for tile index solidity... I did not see a way to get the solidity of a tile so I made one. If there was already a way let me know. Also the breakable tile now finds a non-solid tile to replace broken tile so that it matches the rest of the map. It should always find a non-solid neighboring tile due to the fact the bullet traveled and broke the tile in the first place...
+
+commit b9d9c7f626101011147347b365473d12d0ad575f
+Author: Hiren Sakaria <hiren@psycode.us>
+Date:   Sat May 26 20:08:17 2012 +0530
+
+    added a feature of breaking tile with shooting..however its buggy,need to fix it
+
+commit b36141b5f5a60808c780e71175c1a8be473fdcb0
+Author: Kenny Gregory <kenny@www.psycode.us>
+Date:   Sat May 26 00:56:08 2012 -0400
+
+    Added player blur.. going to attach to Player.as momentum feature and only show about 3-5 blur copies of the player and thinking attach a alpha fade for each blur if possible so the copies will fade away quickly.
+
+commit e77929769c9f7ea50d3f3b4b96c72f10dbe9361e
+Author: Kenny Gregory <kenny@www.psycode.us>
+Date:   Fri May 25 20:34:49 2012 -0400
+
+    Adjusted width of player to allow player to squeeze between single tile locations
+
+commit a3282160b4abf8bb52bdcc284926bb3f9f0197f7
+Author: Hiren Sakaria <hiren@psycode.us>
+Date:   Fri May 25 22:50:35 2012 +0530
+
+    includes jump out from water and saving game at rune updates
+
+commit cff81c6515ce90982ef119fcb890e66c7c898285
+Author: Kenny Gregory <kenny@www.psycode.us>
+Date:   Thu May 24 21:59:29 2012 -0400
+
+    Previous Commit I played with player artwork and gave us a change. Just something different to look at. Check him and his rolling out now. Now on this commit I fixed the grenade explosion sound not playing now it works properly and adjusted volume slightly.
+
+commit bd7671640b74b3553168b7ff3e50f89a3e5c6ebc
+Author: Kenny Gregory <kenny@www.psycode.us>
+Date:   Thu May 24 21:53:19 2012 -0400
+
+    Tweaked Explosion shake to a lesser value looks more realistic and better for lag
+
+commit fca7133d11949f55b3f8db90022f5debdac134de
+Author: Kenny Gregory <kenny@www.psycode.us>
+Date:   Thu May 24 21:35:50 2012 -0400
+
+    Removed ugly first attempt at new healthbar
+
+commit bc2b0b225f0f2a23bfdaccd2d9dc5940749efada
+Author: Kenny Gregory <kenny@www.psycode.us>
+Date:   Thu May 24 21:31:28 2012 -0400
+
+    Added different healthbar and different audio track for the music.
+
+commit 8192a920ba07a3f1946058d0ca5f5bacce49bbbb
+Author: Kenny Gregory <kenny@www.psycode.us>
+Date:   Thu May 24 21:02:44 2012 -0400
+
+    Disabled: Slide tile feature, Tweaked Blood feature properties; Fixed issue with HUD (Hearts,Lifes,Health); Disabled Save feature. Features are good just have bugs that need worked out before you can play the game without it getting in the way.
+
+commit 397b4e44d2944f04951e1337024dfd44eece7f90
+Author: Hiren Sakaria <hiren@psycode.us>
+Date:   Thu May 24 22:46:56 2012 +0530
+
+    previous commit did not add newly added files and assets..adding them with this commit
+
+commit 3fdf6d6dfbc8c7d747605482b774e4a9befdd2f1
+Author: Hiren Sakaria <hiren@psycode.us>
+Date:   Thu May 24 22:35:49 2012 +0530
+
+    this commit includes save game feature,sliding tile and jump effect
+
+commit b5e7e2de88c1ac83f6741cdb73f38111f269b5e9
+Author: Kenny Gregory <kenny@www.psycode.us>
+Date:   Wed May 23 23:08:54 2012 -0400
+
+    Nulling out preloader in DocumentClass
+
+commit 480cb55e6a7c52f54884b3833bb2b9e6bff97fd1
+Author: Kenny Gregory <kenny@www.psycode.us>
+Date:   Wed May 23 22:54:01 2012 -0400
+
+    Re-dded Monster Debugger support now that the core objects are branching with each other correctly
+
+commit d0abe061f83b8e1d2044bafd5a9cf9a1c6cdfd03
+Author: Kenny Gregory <kenny@www.psycode.us>
+Date:   Wed May 23 21:44:07 2012 -0400
+
+    DocumentClass is now the Document Class again. If you open DocumentClass.as you can enable/disable the preloader. Feature requested by Hiren due to hardware specs of his workstation. The preloader works alot differently now... It's object is created in DocumentClass; It then loads the Assets class; After all assets are loaded the Preloader dispatches a custom CoreEvent.as Event which the DocumentClass is listening for and when it gets it the DocumentClass creates a newGame() which creates a new Game() object. The function will be for resetting specific properties that the Game object would require rest if a newGame was created while a old game exist.
+
+commit 8aefdf8cd8608e057b7fe76e182ec378581f5c3a
+Author: Kenny Gregory <kenny@www.psycode.us>
+Date:   Tue May 22 22:36:46 2012 -0400
+
+    Lessened amount of enemies from a test I forgot to revert changes for when inspecting memory. If you want check out the previous commit first and see if it lags your machine. Previous commit has 30 enemies total. This commit has 17 which is still more than the original amount of 10 total. So keep in mind even this commit has more enemies than original version you might be used to
+
+commit 7f4ff1f985c464dab1a3d720ac66f1d9cf8ca157
+Author: Kenny Gregory <kenny@www.psycode.us>
+Date:   Tue May 22 22:29:34 2012 -0400
+
+    Moved all Embedded assets to the DocumentClass. This is currently the class that the Preloader looks for assets in. After doing so I noticed a very nice result in the debugger memory graph. We have normal rise and fall with garbage collection and also at certain points within the fall we get very close to where the memory was at when we first ran the game. This is what we are looking for and is great news. Also I wrote a timer in State.as to cleanUp() it then calls timers that run periodically throughout the game cleaning up FlxGroups if they are to full of dead objects.... Currently they are just cleaning up enemy and playerBullets. I have set the max bullets in queue for the player to 5 and enemy set to 10. This seems to work fine. It will recycle through the 5 or 10 mentioned but we will not have FlxGroups filled to the brim with objects waiting to be recycled.
+
+commit 2585601087842c3cb0ae2ed328b08d27be8e48b5
+Author: Kenny Gregory <kenny@www.psycode.us>
+Date:   Tue May 22 20:09:46 2012 -0400
+
+    Fixed Bullet issue when Bullet was outside of world bounds. Current method destroys Bullets on contact with edge of map. However right side of map not tested and there was a issue with the map width and player location so there might be one with the Bullet also. This is something we need to look at."
+
+commit 7c76fd8a18cc3f9070ef5ad4ac5ba40b37fb96f6
+Author: Kenny Gregory <kenny@www.psycode.us>
+Date:   Tue May 22 20:09:33 2012 -0400
+
+    _bullets are now playerBullets and enemyBullets FlxGroup. You no longer pass the reference through functions instead we use static var's for both and you call them via including State.as as a import then calling State.playerBullets or State.enemyBullets
+
+commit 407114516b4af4c80a702e7f810c063c0edcf3a6
+Author: Kenny Gregory <kenny@www.psycode.us>
+Date:   Tue May 22 19:33:06 2012 -0400
+
+    _bullets are now playerBullets and enemyBullets FlxGroup. You no longer pass the reference through functions instead we use static var's for both and you call them via including State.as as a import then calling State.playerBullets or State.enemyBullets
+
+commit 9d2a10e84878d9ad74213c049c73e6805df945ab
+Author: Kenny Gregory <kenny@www.psycode.us>
+Date:   Mon May 21 21:13:37 2012 -0400
+
+    State.as is still in inspection state however the first inspection is complete.. Moving on to Player.as
+
+commit 98c6eb33020e7f9d7c76bccc68c7e6eb430eb11b
+Author: Kenny Gregory <kenny@www.psycode.us>
+Date:   Mon May 21 20:35:59 2012 -0400
+
+    Finalizing commit.. Cleaning up commit queue.
+
+commit 728f95eb11260be1f83f879ea76ad6635d0c3e2a
+Author: Kenny Gregory <kenny@www.psycode.us>
+Date:   Mon May 21 20:35:39 2012 -0400
+
+    Removed uneccesary code and did slight organization on State.as; Also did comment cleanup and added new comments for visual referencing.
+
+commit 66ef40e6ad3b5baaa746eafd8da5400193dd5957
+Author: Kenny Gregory <kenny@www.psycode.us>
+Date:   Mon May 21 19:57:29 2012 -0400
+
+    Removed enemyTimer respawn function that was unused; Removed old healthbar with heavy resource using makeGraphic calls on update of the State
+
+commit aad603adabff5df6bdcad3bbc01b81d89ce1f7bf
+Author: Kenny Gregory <kenny@www.psycode.us>
+Date:   Mon May 21 19:40:00 2012 -0400
+
+    Debugger SWC binary is located in Game/debugger
+
+commit 27e7ab910d18cfc2db3969c9e2e95a1843e0bca8
+Author: Kenny Gregory <kenny@www.psycode.us>
+Date:   Mon May 21 19:38:55 2012 -0400
+
+    Memory Inspection: passed for Enemy.as; Commented for visual referencing
+
+commit 743bb4c7b698350d00ddc03dee322707fc8705ac
+Author: Kenny Gregory <kenny@www.psycode.us>
+Date:   Mon May 21 17:58:41 2012 -0400
+
+    Removed Timer/TimerEvent imports that were not being used currently in Enemy.as
+
+commit 502c264879f1b1e8c4c4e888c43a5bc299d804f6
+Author: Kenny Gregory <kenny@www.psycode.us>
+Date:   Mon May 21 17:55:59 2012 -0400
+
+    Memory Inspection: passed for ExplosionParticle.as; Commented for visual referencing
+
+commit cc911c8d9763c355da2e1c04efff7ea4c2c15949
+Author: Kenny Gregory <kenny@www.psycode.us>
+Date:   Mon May 21 17:43:52 2012 -0400
+
+    Memory Inspection: passed for Grenade.as; Commented for visual referencing
+
+commit 45035ece23b1e51fa91c0b144c0660a82d917c4b
+Author: Kenny Gregory <kenny@www.psycode.us>
+Date:   Sun May 20 23:21:37 2012 -0400
+
+    Memory Inspection: passed for Bullet.as; Commented for visual referencing; Visual referencing for other classes also tweaked
+
+commit aaad917fe940e86e08c0fbfd067ec03765b1c854
+Author: Kenny Gregory <kenny@www.psycode.us>
+Date:   Sun May 20 23:08:05 2012 -0400
+
+    Memory Inspection: passed for Game.as; Commented for visual referencing also
+
+commit b65d846d68e29819064a1a03d3cf705d6008ffd0
+Author: Kenny Gregory <kenny@www.psycode.us>
+Date:   Sun May 20 22:59:43 2012 -0400
+
+    Memory Inspection: passed for DocumentClass.as; Commented for visual referencing also
+
+commit 0294273f8450b7eecdb745b5954931c4b313e400
+Author: Kenny Gregory <kenny@www.psycode.us>
+Date:   Sun May 20 22:07:32 2012 -0400
+
+    Hybrid.as checked and passes Memory Inspection. Played Game while debugging and noticed that Grenades are spiking the memory about 3-5MB every grenade thrown. There is likely a leak there I will make it to that class, but I am going down the line of classes inspecting each class.
+
+commit a38159f9255a73cb1b9a46d7929d32475cd0f82d
+Author: Kenny Gregory <kenny@www.psycode.us>
+Date:   Sun May 20 20:56:57 2012 -0400
+
+    Added some comments and visual references in the comments for organization
+
+commit f16cd5ddbbae89a5ebf21fe88dafae3095e232b1
+Author: Kenny Gregory <kenny@www.psycode.us>
+Date:   Sun May 20 20:44:59 2012 -0400
+
+    Was able to remove 1 line of code that was a duplicate from hurt conditions
+
+commit d42607f1bad6d5ade26feef20bc75c7b54f94720
+Author: Kenny Gregory <kenny@www.psycode.us>
+Date:   Sun May 20 20:26:49 2012 -0400
+
+    Commented telling structure of the objects per file
+
+commit 08c55bd3cfad5ddcba1259a824c807b2005fe675
+Author: Kenny Gregory <kenny@www.psycode.us>
+Date:   Sun May 20 19:20:50 2012 -0300
+
+    When we switch back to using DocumentClass as the Document Class then there potentially could be a bug I believe if the code run and was added to the stage already it would be removing an EventListener that did not exist so now we check for it just incase.
+
+commit 45ed79e291b777555a77e3b19ffb9f664eadb028
+Author: Kenny Gregory <kenny@www.psycode.us>
+Date:   Sun May 20 19:10:46 2012 -0300
+
+    Added a statement Boolean allowJetpack to enable/disable jetpack feature. We can make this enabled by a upgrade in the game but being able to use it all the time takes away from game difficulty
+
+commit 641bec877cbe9c9245c5f451365991620dd703c2
+Author: Kenny Gregory / Hiren Sakari / Rodivic Garcia <kenny@psycode.us>
+Date:   Sun May 20 15:08:00 2012 -0700
+
+    Added Monster Debugger support. In order for it to work you must go to the .FLA "Actionscript Settings". Click "Library Path" Button and double click the location of MonsterDebugger.swc to change the location of the swc file for your machine. Mine is "/Game/Game/bin/MonsterDebugger.swc" I have my Game folder in the root directory on my computer. You must adjust this to point to it on your machine. As you see it's in the bin folder where the main .FLA is located in "Game". You might have to adjust the path to fit your machine/user/download location. Also disabled pixel that was tracking the players x,y.
+
+commit 6cc4627828ac0df1ad339c9667196118e0d683bd
+Author: Kenny Gregory <kenny@www.psycode.us>
+Date:   Thu May 17 20:49:21 2012 -0400
+
+    Removed Preloader.as as the new method does not require this object.
+
+commit 470b22c753344caa53755f4b133eb4db5cf01247
+Author: Kenny Gregory <kenny@www.psycode.us>
+Date:   Thu May 17 20:44:06 2012 -0400
+
+    Just realized that a breathing feature for the player underwater that I had programmed blindly previously actually works and is pretty accurate to how the breathing should work. It needs a guage tracking it
+
+commit caeb0fea6a75cdcb80a583d4db78d5c5375fc392
+Author: Kenny Gregory <kenny@www.psycode.us>
+Date:   Thu May 17 20:39:08 2012 -0400
+
+    Added pixel @ player.x,y to trace movement and paths for upcoming update
+
+commit 2e10affbb65d44eea1f14d1df9720285e5941d2a
+Author: Kenny Gregory <kenny@www.psycode.us>
+Date:   Thu May 17 20:18:55 2012 -0400
+
+    Added Preloader. I used FlxPreloader which is not compatible with Flash CS due to Meta tags. I had to make a small edit on FlxPreloader. And line out the object linkage so that everything flowed smoothly with the addition. The Preloader is bare/basic so it still needs the assets then override update(percent:Number):void to add the resizing of the progress bar or other features.
+    }
+
+commit 7cd0ab4f91706b10e2c5e5521a8fcb1de8ab9098
+Author: Kenny Gregory <kenny@www.psycode.us>
+Date:   Wed May 16 22:26:47 2012 -0400
+
+    Graphics change list added in root folder. GFXChangelist.doc or .PDF ... This is a rough first draft I will keep modifying and get Hiren involved. This might can get you started Rodivic Garcia
+
+commit 91e6734407ab876914a636c1030843fde2204372
+Author: Hiren Sakaria <hiren@psycode.us>
+Date:   Tue May 15 21:34:59 2012 +0530
+
+    added new png healthbar
+
+commit e810c95ab6211ff73674f9d7eb94cb540c5c9440
+Author: Hiren Sakaria <hiren@psycode.us>
+Date:   Tue May 15 08:34:01 2012 +0530
+
+    added collision of hybrid and player and solved issue of multiple call to player.kill()
+
+commit 417a99f7c1a376e0c201186fa53558b77e5b5612
+Author: Kenny Gregory <kenny@www.psycode.us>
+Date:   Mon May 14 22:53:52 2012 -0400
+
+    Adjusted Hybrid move speed so player can slightly evade when being chased. This enemy will also have a weapon.
+
+commit e104cb8b3b310f26de6202a518d62201755fe131
+Author: Kenny Gregory <kenny@www.psycode.us>
+Date:   Mon May 14 22:44:56 2012 -0400
+
+    Hybrid enemy now has a different type of mindset than previous enemy. He wanders around in la la land until the player gets close and then he stalks you
+
+commit 8e43f8f2359cfbee13fa517552a88c719e7b1396
+Author: Kenny Gregory <kenny@www.psycode.us>
+Date:   Mon May 14 19:50:43 2012 -0400
+
+    Poor quality graphic. Did not use so removing it along with its stale class file.
+
+commit c731c26eea1e2671121c01f36d667139c89a1949
+Author: Kenny Gregory <kenny@www.psycode.us>
+Date:   Mon May 14 19:49:29 2012 -0400
+
+    Added new enemy Hybrid class. This type of enemy does not jump but has a jump animation while walking. Enemy hybrid also moves faster than other enemies. His weapon has not been added and collisions with the player for hybrids have also not been added.
+
+commit 9f7f2248ed657cac588ae4bfca219ef71e999f94
+Author: Kenny Gregory <kenny@www.psycode.us>
+Date:   Sun May 13 21:53:36 2012 -0400
+
+    Previous push had a bracket missing from a last minute adjustment. Resubmitting..
+
+commit abb3408b24bc3b21471c56b48b3f0dee4a25b455
+Author: Kenny Gregory <kenny@www.psycode.us>
+Date:   Sun May 13 21:51:27 2012 -0400
+
+    Worked on a seperate sprite for the rolling feature. Still needs improvement but I do think its better than the previous look of the sprite rotating. Played with the speeds I think where its at or maybe slightly slower is the best result visually
+
+commit 86cce47307c58e532896b2e9e319922b2477fdf2
+Author: Kenny Gregory <kenny@www.psycode.us>
+Date:   Sun May 13 21:11:25 2012 -0400
+
+    Added functionality for the player lifes HUD. Everything other than what happens when there are no more lifes remaining, is working properly. Enjoy...
+
+commit 66542d6316fa0413e2f36401f1cd2538a9bb541d
+Author: Kenny Gregory <kenny@www.psycode.us>
+Date:   Sun May 13 21:00:08 2012 -0400
+
+    Added Lifes icons for the HUD in top left corner of screen. Also adjusted the positioning of the healthbar to math lifes alignment. Fixed a small bug in the process of the healthbar camera not working together. Will close the bug and comment about it there. Still working on functionality of lives icons
+
+commit ce5db787e877a16fe62ac2c4374d28c8d38299f9
+Author: Kenny Gregory <kenny@www.psycode.us>
+Date:   Sun May 13 19:55:41 2012 -0400
+
+    Fixed player rotate on jump issue that developed when disabling the player from rolling into water by resetting to player standing.. If not you have to wait till the player hits the ground in order to control player
+
+commit 09dab9926a456c8e4141ec2a9ec250745a00c286
+Author: Kenny Gregory <kenny@www.psycode.us>
+Date:   Sun May 13 19:20:43 2012 -0400
+
+    Hearts now effected by the map environment. Enemy spawn under water glitch believed to be fixed
+
+commit 7c9ff4a674d8f4017aeb11f21c2c4cb1bf3731c0
+Author: Kenny Gregory <kenny@www.psycode.us>
+Date:   Sun May 13 19:11:09 2012 -0400
+
+    Enemy/Other underwater feature added. Still needs work on hurt for both Player and Enemy. Player has breathing attribute also if anyone works on it please incorporate that also if you missed me mentioning it previously.
+
+commit 82510fc0684b6603c4274c47482cded156a8356e
+Author: Kenny Gregory <kenny@www.psycode.us>
+Date:   Sun May 13 18:22:21 2012 -0400
+
+    Drawed some on the map. Drop underwater at the last opportunity and you will float into a lower chamber.
+
+commit 148bf7c2cd7f6f76eec08a43d6d97644fbadf250
+Author: Kenny Gregory <kenny@www.psycode.us>
+Date:   Sun May 13 18:06:06 2012 -0400
+
+    More control work done for Underwater feature.
+
+commit 23b135c0ed9019bdd0b9f8edaff3cad6e26a7e50
+Author: HKDevelopment <kenny@psycode.us>
+Date:   Sun May 13 17:35:44 2012 -0400
+
+    Added underwater feature. Still working on the breathing and hurt if out of breath section of the feature.
+
+commit 03da81f9e0f8e513e7d00c76f07d3ca84b4556ef
+Author: Kenny Gregory <kenny@www.psycode.us>
+Date:   Sun May 13 15:10:51 2012 -0400
+
+    If you are rolling and you set a grenade 'C'.. If the player is centered over the grenade it will add to velocity.y -100. If the player is on the sides of the grenade however it will launch him with a little more thrust to the left and right. The rolling feature adds the ability to fit in 1 tile crevises/spaces. If you are in rolling position and you plant a grenade as long as its centered it will bounce you upward in the air allowing you to jump while rolling into crevises/small spaces. I will be making a BUG addition, but it will be more an enhancement. It will recommend maybe allowing the grenade to attach to walls depending on the primary background layer tile. Refer to that report for more details on where I'm going with it.
+
+commit 6bf4d15e7a0a664fed9f09480b179be967ea90bf
+Author: Kenny Gregory <kenny@www.psycode.us>
+Date:   Sun May 13 13:57:49 2012 -0400
+
+    When rolling if you press 'C' for Grenade; The Grenade will no longer launch it will be placed on the ground where Player is rolling.
+
+commit 1df690e2eeb5ed012be20620a1b65f5ac6174efa
+Author: HKDevelopment <kenny@psycode.us>
+Date:   Sun May 13 13:45:28 2012 -0400
+
+    Disabled player shoot when rolling.
+
+commit e777fd52c78e24d9dde17b95f5e6498803d9789e
+Author: Kenny Gregory <kenny@www.psycode.us>
+Date:   Sun May 13 13:39:19 2012 -0400
+
+    Movement speed when rolling is increased
+
+commit 7458348d320d6d70135c7c0a152f1664d94fc22a
+Author: Kenny Gregory <kenny@www.psycode.us>
+Date:   Sun May 13 13:28:22 2012 -0400
+
+    Added rolling feature. Activate by pressing 'DOWN' arrow. When rolling jump is disabled. Still working on this more updates to follow
+
+commit c13c94e4041861e69019e98fc173bacc963e92ba
+Author: Kenny Gregory <kenny@www.psycode.us>
+Date:   Sun May 13 12:24:20 2012 -0400
+
+    Added boost recharge timer. 1800ms
+
+commit f964d26e9edbe3d66cf793f26e4002994cf9c1a9
+Author: Hiren Sakaria <hiren@psycode.us>
+Date:   Sun May 13 17:53:43 2012 +0530
+
+    added new weapon Grenade
+
+commit 76920686f097c6a5771f29e24c6605096d4766cb
+Merge: 291d4fb d277c80
+Author: Hiren Sakaria <hiren@psycode.us>
+Date:   Sat May 12 18:51:42 2012 +0530
+
+    added a new feature of jetpack to player
+
+commit d277c8065a34653b3e745f18afaffa345ab5a8e9
+Author: Kenny Gregory <kenny@www.psycode.us>
+Date:   Fri May 11 18:56:23 2012 -0400
+
+    DO NOT MODIFY! - Did work on the revision in attempt to organize the code and clean up some messy methods we had out there. You may view the code but please do not modify and push anything at this location.
+
+commit 6f60cdde7ae04e02431ee97a1a72e1af226f1e10
+Author: Kenny Gregory <kenny@www.psycode.us>
+Date:   Fri May 11 18:05:21 2012 -0400
+
+    Removed stale directory on GitHub
+
+commit be6c5af3bf1410b85c4bd889a90be89ba6403a47
+Author: Kenny Gregory <kenny@www.psycode.us>
+Date:   Fri May 11 18:04:16 2012 -0400
+
+    Restore attempt 1
+
+commit 0ff3c4a94f0d4b6403155a65166a1cc9df98ba62
+Author: Kenny Gregory <kenny@www.psycode.us>
+Date:   Fri May 11 18:01:04 2012 -0400
+
+    DO NOT EDIT OR MODIFY
+
+commit 378a93c731783eb11b85ad891aba4fb44d0ec294
+Author: Kenny Gregory <kenny@www.psycode.us>
+Date:   Fri May 11 17:59:06 2012 -0400
+
+    Removed backup file
+
+commit dbae792188353258e314f654cfc79bc9d5c6cce7
+Author: Kenny Gregory <kenny@www.psycode.us>
+Date:   Fri May 11 17:57:26 2012 -0400
+
+    Rename
+
+commit 48360c3b02b4feb853cd421de81a464ff7d6778e
+Author: Kenny Gregory <kenny@www.psycode.us>
+Date:   Fri May 11 17:56:39 2012 -0400
+
+    File name correction
+
+commit 4ccf4ba5000db228449a8edafce661a771d356c5
+Author: Kenny Gregory <kenny@www.psycode.us>
+Date:   Fri May 11 17:53:56 2012 -0400
+
+    ..
+
+commit d479f41eabc9c987e70e7edf6d934e28cebf1675
+Author: Kenny Gregory <kenny@www.psycode.us>
+Date:   Fri May 11 17:49:54 2012 -0400
+
+    Pushing backup, Hiren make sure to keep your revisions and send to me via email for now.
+
+commit 291d4fb1b68689ad2a64f065bc996ea75b2ca7b4
+Author: Hiren Sakaria <hiren@psycode.us>
+Date:   Fri May 11 21:34:00 2012 +0530
+
+    solve issue of health bar that is issue no 10 on git hub
+
+commit d2f134fa6cf7fea99133e2f4933e3daeabc70078
+Author: Kenny Gregory <kenny@www.psycode.us>
+Date:   Thu May 10 19:15:07 2012 -0400
+
+    Enemy Bullets collide with solid map tiles; Bullets s/b destroyed when outside of game world; Slowed enemy rate of fire down; Different method of adding Enemy's to the map. This is still not a solid method just something to open the addition possibility up a little bit. Fixed a but where the healthbar was being drawn and updated from player.health. Problem was it was being updated when player health was non existant. Fixed this issue.
+
+commit 6297f16f3d9863bdf7a8ba6d56ac1e6212b24565
+Author: Kenny Gregory <kenny@www.psycode.us>
+Date:   Thu May 10 19:10:16 2012 -0400
+
+    Bullets s/b getting killed when outside of world
+
+commit 9727ce6945a2572fedc7bda03c83882586901b9c
+Author: KennyGregory <kenny@www.psycode.us>
+Date:   Wed May 9 23:30:23 2012 -0300
+
+    Update Comments.txt
+
+commit 11e239107a425f509f2235dfbba89bbb4d58c3ed
+Author: Kenny Gregory <kenny@www.psycode.us>
+Date:   Wed May 9 22:05:25 2012 -0400
+
+    Added Heart. Heart gives + 50 to player health as long as player.health does not exceed 100 then it would be set to 100
+
+commit c5c20bbf8ac213fff892c2d36030a6d1978f1d03
+Author: Kenny Gregory <kenny@www.psycode.us>
+Date:   Wed May 9 21:37:57 2012 -0400
+
+    Added Enemy Bullet
+
+commit 11e9ee2d44f49d9d897fea42786377b8c634ea89
+Author: Kenny Gregory <kenny@www.psycode.us>
+Date:   Tue May 8 23:03:15 2012 -0400
+
+    Removed unneccesary files
+
+commit 04a1f47e900dcaf1b325b914ba9a5023ea514780
+Author: Kenny Gregory <kenny@www.psycode.us>
+Date:   Tue May 8 22:29:14 2012 -0400
+
+    Added a comments file in Platformer/ for guest to possibly drop in a msg about the project
+
+commit d9d9c56b97e74255c1310ef9fcdbddbde9d4872b
+Author: Kenny Gregory <kenny@www.psycode.us>
+Date:   Tue May 8 22:14:57 2012 -0400
+
+    Kenny joined development.
+
+commit ac74446899346e0071dfa98114bd0f2a0f581052
+Author: HKDevelopment <kenny@psycode.us>
+Date:   Tue May 8 19:36:05 2012 -0400
+
+    Removed duplicate README
+
+commit e59658dee74ea86c6ce75cc84cab2dcc0620509e
+Author: HKDevelopment <kenny@psycode.us>
+Date:   Tue May 8 19:34:22 2012 -0400
+
+    Source added - Kenny
+
+commit 94c6555d1feb983ca43444ac3f186a95f5b46f9d
+Author: HKDevelopment <kenny@psycode.us>
+Date:   Tue May 8 17:17:39 2012 -0400
+
+    Project started - Kenny
